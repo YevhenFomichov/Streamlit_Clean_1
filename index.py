@@ -3,7 +3,10 @@ import matplotlib.pyplot as plt
 from projects import combined_mdi, mdi, dpi, vx, ek
 
 def main():
-    plt.rcParams["figure.figsize"] = (10,4)
+    plt.rcParams["figure.figsize"] = (10, 4)
+    
+    # Заголовок приложения
+    st.title("Project Selector")
 
     st.sidebar.title("Menu")
     project = st.sidebar.radio('Which project would you like to test:', 
